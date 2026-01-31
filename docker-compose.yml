@@ -3,7 +3,7 @@ services:
    build:
      context: .
      dockerfile: Dockerfile
-   image: $elbezali/spring-deploy-student4-app:latest
+   image: ${DOCKERHUB_USERNAME}/spring-deploy-student4-app:latest
    container_name: spring-deploy-student4-app
    ports:
      - ${APP_PORT:-9000}:${APP_PORT:-9000}
